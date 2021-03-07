@@ -1,6 +1,6 @@
 title Wrapper Offline Reborn Import Script
 :: Helps to make importing files using the theme editing workaround easier
-:: Author: joseph-the-animator
+:: Author: joseph-the-animator#2292
 :: License: MIT
 
 :: Initialize (stop command spam, clean screen, make variables work, set to UTF-8)
