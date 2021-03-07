@@ -1,6 +1,6 @@
-title Jewmber Animate Import Script
+title Wrapper Offline Reborn Import Script
 :: Helps to make importing files using the theme editing workaround easier
-:: Author: Jewmberzoom#0552
+:: Author: joseph-the-animator
 :: License: MIT
 
 :: Initialize (stop command spam, clean screen, make variables work, set to UTF-8)
@@ -19,7 +19,7 @@ popd utilities
 if !errorlevel! NEQ 0 goto error_location
 goto noerror_location
 :error_location
-echo Doesn't seem like this script is in Jewmber Animate's utilities folder.
+echo Doesn't seem like this script is in Wrapper Offline Reborn's utilities folder.
 goto end
 :noerror_location
 
@@ -32,7 +32,7 @@ if "!SUBSCRIPT!"=="" (
 :point_insertion
 
 :: patch detection
-if exist "..\patch.jpg" echo importing doesn't matter if whopper's patched && goto end
+if exist "..\patch.jpg" echo importing doesn't matter if https://78.63.40.199's patched && goto end
 
 :: Initialize variables
 set FOLDERFILLED=n
