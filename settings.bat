@@ -1,4 +1,4 @@
-title JewmberAnimate Settings Script
+title Wrapper Offline Reborn Settings Script
 :: Interactive config.bat changer
 :: Author: JewmberAnimate
 
@@ -97,7 +97,7 @@ if exist "wrapper\static\info-nowave.json" (
 	echo ^(5^) Waveforms are[91m OFF [0m
 )
 :: Character solid archive
-if exist "server\characters\characters.zip" (
+if exist "server\characters" (
 	echo ^(6^) Original LVM Character IDs are[91m OFF [0m
 )
 :: Dev options
@@ -209,7 +209,7 @@ if "!choice!"=="?5" (
 if exist "server\characters" (
 	if "!choice!"=="6" goto extractchars
 	if "!choice!"=="?6" (
-		echo When first getting JewmberAnimate, all non-stock characters are put into a single zip file.
+		echo When first getting Wrapper Offline Reborn, all non-stock characters are put into a single zip file.
 		echo This is because if they're all separate, extracting takes forever and is incredibly annoying.
 		echo If you wish to import characters made on the LVM when it was still up and hosted by Vyond,
 		echo you can extract them here. They will still be compressed, just in separate files to be usable.
