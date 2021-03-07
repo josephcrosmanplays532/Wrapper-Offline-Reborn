@@ -1,6 +1,6 @@
-title Jewmber Animate Reset Script
+title Wrapper Offline Reborn Reset Script
 :: Resets any changed files to make a fresh install, meant for devs making a new release
-:: Author: Jewmberzoom#0552
+:: Author: joseph-the-animator#2292
 :: License: MIT
 
 :: Initialize (stop command spam, clean screen, make variables work, set to UTF-8)
