@@ -1,5 +1,5 @@
-:: Automatically upgrades an existing JA install to a new version
-:: Author: Jewmberzoom#0552
+:: Automatically upgrades an existing WOR install to a new version
+:: Author: joseph-the-animator#2292
 
 :: Initialize (stop command spam, clean screen, make variables work, set to UTF-8)
 @echo off && cls
@@ -15,7 +15,7 @@ if not exist wrapper ( goto error_location )
 if not exist start_ja.bat ( goto error_location )
 goto noerror_location
 :error_location
-echo Doesn't seem like this script is in the JewmberAnimate folder.
+echo Doesn't seem like this script is in the Wrapper Offline Reborn folder.
 echo Please move it to the same folder as start_ja.bat
 goto end
 :noerror_location
@@ -45,7 +45,7 @@ if exist "patch.jpg" echo no amount of upgrades can fix a patch && goto end
 
 :: Get info about update
 call upgrade_assets\update_metadata.bat
-title Upgrading JewmberAnimate to !WRAPPER_NEWVER!
+title Upgrading Wrapper Offline Reborn to !WRAPPER_NEWVER!
 
 echo Would you like to upgrade to !WRAPPER_NEWVER!?
 echo Update summary: !UPDATE_SUMMARY!
@@ -70,7 +70,7 @@ echo You must answer Yes or No. && goto installaskretry
 
 cls
 echo Please do not close this window^^!^^!
-echo Doing so may ruin your copy of JewmberAnimate.
+echo Doing so may ruin your copy of Wrapper Offline Reborn.
 echo It's almost certainly NOT frozen, just takes a while.
 echo:
 
